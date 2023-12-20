@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css"
+    />
+
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="">
+      <label for="category">Search</label>
+      <select name="category" id="category">
+        <option value="">--SELECT OPTION--</option>
+        <option value="book_author.ISBN">ISBN</option>
+        <option value="book.title">Title</option>
+      </select>
+      <input type="text" name="query" id="query" disabled />
+    </form>
+    <div id="search1"></div>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Trans ID</th>
+          <th>Copies</th>
+          <th>Publisher</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody id="body"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
